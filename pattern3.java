@@ -1,14 +1,15 @@
 import java.util.*;
-class pattern3
+class pattern2
 {
 	public static void main(String [] args)
-	{
-		int a=5;
-		for(int i=1;i<=a;i++)
+	{	
+		Scanner in=new Scanner(System.in);
+		int a=in.nextInt();
+		for(int i=a;i>0;i--)
 		{
-			for(int j=1;j<=a;j++)
+			for(int j=0;j<a;j++)
 		{
-			if(j>(a-i))
+			if(j<=(a-i))
 			System.out.print("*");
 		}
 		System.out.println();
